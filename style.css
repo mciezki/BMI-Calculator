@@ -1,0 +1,193 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(39deg, rgba(81, 157, 69, 1) 15%, rgba(171, 162, 142, 1) 100%);
+}
+
+/* HEADER */
+header {
+    height: 10vh;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    line-height: 10vh;
+    text-shadow: 0 0 2px white;
+}
+
+/* MAIN */
+main {
+    position: relative;
+    height: 90vh;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.form div {
+    margin-bottom: 5vh;
+}
+
+.form div h2 {
+    text-shadow: 0 0 2px white;
+}
+
+.form div input {
+    height: 25px;
+    border: 0px;
+    border-radius: 20%;
+    outline: none;
+    text-align: center;
+}
+
+.form button {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 20px;
+    color: black;
+    outline: none;
+    transition: 0.5s;
+}
+
+.form button:hover {
+    box-shadow: 0 0 8px white;
+    text-shadow: 0 0 5px white;
+}
+
+/* BLUR FOR HEADER AND MAIN */
+.blur {
+    animation: blurAppear 1s linear forwards;
+}
+
+/* RESULT */
+.result {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.rinside {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    background: linear-gradient(39deg, rgba(40, 46, 39, 1) 15%, rgba(37, 37, 35, 1) 100%);
+    text-align: center;
+    animation: manualAppear 1s linear forwards;
+}
+
+
+.rinside h2 {
+    margin: 10px 0 20px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    border-bottom: 2px solid white;
+    text-shadow: 0 0 5px white;
+}
+
+.bmi {
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px white;
+}
+
+.bmi span {
+    text-shadow: 0 0 5px black;
+}
+
+
+.underweight {
+    margin-bottom: 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 0 0 5px black;
+}
+
+
+.normalweight {
+    margin-bottom: 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: green;
+    text-shadow: 0 0 5px black;
+}
+
+.overweight {
+    margin-bottom: 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: orangered;
+    text-shadow: 0 0 5px black;
+}
+
+.obesity {
+    margin-bottom: 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 0 0 5px black;
+}
+
+.exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* ANIMATIONS */
+@keyframes blurAppear {
+    0% {
+        filter: blur(0px)
+    }
+
+    100% {
+        filter: blur(8px);
+    }
+}
+
+@keyframes manualAppear {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

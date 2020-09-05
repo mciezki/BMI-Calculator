@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+    </header>
+    <main>
+        <div class="form">
+            <div>
+                <h2>Height (m)</h2>
+                <input type="number" class="height">
+            </div>
+            <div>
+                <h2>Weight (kg)</h2>
+                <input type="number" class="weight">
+            </div>
+            <button>Check BMI</button>
+        </div>
+    </main>
+    <section class="result">
+        <div class="rinside">
+            <div class="exit">X</div>
+            <h2>Result:</h2>
+            <h3 class="bmi">Your BMI: <span></span></h3>
+            <h4 class="underweight">Underweight: BMI &lt 18,5</h4>
+            <h4 class="normalweight">Good Weight: 18,5 ≤ BMI ≤ 24,9</h4>
+            <h4 class="overweight">Overweight: 25 ≤ BMI ≤ 29,9</h4>
+            <h4 class="obesity">Obesity: BMI > 30</h4>
+        </div>
+    </section>
+    <script src="js/Calculate.js"></script>
+    <script src="js/Begin.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
